@@ -1,0 +1,69 @@
+1. 模块依赖关系
+├projectName-assemble
+├──────> projectName-web
+├────────────> projectName-biz
+├───────────────> projectName-dal
+├──────────────────> projectName-common
+├------------->projectName-facade
+├------------->projectName-integration
+
+
+2. 技术框架
+
+UI层：Android
+web层：springmvc+velocity+shiro
+biz层：springframework
+dal层：mybatis+druid
+DB层: mysql
+
+
+3. 架构
+
+
+
+
+4. 配置文件说明
+  1, 日志配置(logback.xml)
+  2, spring bean配置(projectName-config.xml)
+  3, web应用配置(web.xml)
+  4, 属性配置(projectName-xxx.properties)
+  5, 数据库相关配置(spring-db.xml)
+  6, mybatis generator配置(generatorConfig.xml)
+  7, shiro配置(spring-shiro.xml)
+  8, spring contaxt配置(spring-service.xml)
+
+5. 环境感知使用
+  http://bohr.me/env-aware/(基于spring的profile)
+  对原配置文件的修改和整合如下
+  1，logback.xml引用gzt-${spring.profiles.active}.properties文件
+  2，projectName-config.xml添加Bean gztProperties，用于注入属性值给对应的对象
+  3，在assemble模块中spring目录下添加projectName-xxx(dev,test,online)属性配置文件
+  4，删除原gzt.properties，log.properties, dbconfig.properties文件,其内容均集成到gzt-xxx中。
+  5, spring-db.xml引用projectName-${spring.profiles.active}.properties文件
+  6, PropertiesUtil获取properties实现修改（通过2的配置注入）
+
+6. 发布脚本app.sh
+   使用方法：
+       echo "启动应用: $0 start gzt dev" >&2
+       echo "关闭应用: $0 stop gzt " >&2
+       echo "查看应用状态应用: $0 status gzt " >&2
+
+7. 测试模块说明
+    测试的base类可分为带spring容器类、集成mock类，dubbo客户端类，普通类等，分别用于不同类型的单元测试。
+    目前实现了spring容器类（例PropertiesUtilsTest），以后根据需要，再添加即可。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
