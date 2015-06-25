@@ -1,0 +1,30 @@
+2015-06-25 11:05:37.279 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader---/
+-/Loading XML bean definitions from URL [jar:file:/C:/workspace/my_learn/simple-temple/projectName-web/target/projectName-web-1.0.jar!/spring/spring-shiro.xml]
+
+2015-06-25 11:05:37.421 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader---/
+-/Loading XML bean definitions from URL [jar:file:/C:/workspace/my_learn/simple-temple/projectName-biz/target/projectName-biz-1.0.jar!/spring/spring-service.xml]
+
+2015-06-25 11:05:37.459 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader---/
+-/Loading XML bean definitions from URL [jar:file:/C:/workspace/my_learn/simple-temple/projectName-dal/target/projectName-dal-1.0.jar!/spring/spring-db.xml]
+
+2015-06-25 11:05:37.589 [main] INFO  o.s.c.s.GenericApplicationContext---/
+-/Refreshing org.springframework.context.support.GenericApplicationContext@f5ba5a5: startup date [Thu Jun 25 11:05:37 CST 2015]; root of context hierarchy
+
+2015-06-25 11:05:37.769 [main] WARN  o.m.s.mapper.ClassPathMapperScanner---/
+-/No MyBatis mapper was found in '[com.gzt.dal.mybatis.maps]' package. Please check your configuration.
+
+2015-06-25 11:05:37.787 [main] INFO  o.s.b.f.c.PropertyPlaceholderConfigurer---/
+-/Loading properties file from URL [jar:file:/C:/workspace/my_learn/simple-temple/projectName-common/target/projectName-common-1.0.jar!/spring/projectName-dev.properties]
+
+2015-06-25 11:05:37.846 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory---/
+-/Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3cad5c07: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionManager,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+
+2015-06-25 11:05:37.996 [main] ERROR c.alibaba.druid.filter.FilterManager---/
+-/load filter error, filter not found : start
+
+2015-06-25 11:05:39.337 [Thread-1] INFO  o.s.c.s.GenericApplicationContext---/
+-/Closing org.springframework.context.support.GenericApplicationContext@f5ba5a5: startup date [Thu Jun 25 11:05:37 CST 2015]; root of context hierarchy
+
+2015-06-25 11:05:39.338 [Thread-1] INFO  o.s.b.f.s.DefaultListableBeanFactory---/
+-/Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3cad5c07: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionManager,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+

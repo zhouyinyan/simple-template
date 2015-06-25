@@ -2,9 +2,11 @@ package com.gzt.test.base;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import static org.junit.Assert.*;
 
 /**
  * Created by zyinyan on 2015/6/23.
@@ -25,5 +27,10 @@ public class BaseSpringContextTest {
     @After
     public void tearDown() throws Exception {
 
+    }
+
+    @Test
+    public void testName() throws Exception {
+        assertTrue(true);
     }
 }
