@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                        http://code.alibabatech.com/schema/dubbo
+        				http://code.alibabatech.com/schema/dubbo/dubbo.xsd"
+       default-lazy-init="true">
+
+    <!-- dubbo配置 -->
+    <!-- Application name 初始化ApplicationConfig owner填写邮箱名 -->
+    <dubbo:application name="javaTest" owner="xxx" organization="xxx" logger="slf4j"/>
+
+    <!-- registry address, used for service to register itself 初始化RegistryConfig -->
+    <dubbo:registry protocol="zookeeper" address="${dubbo.registry.zookeeper}"
+                    file="${dubbo.registry.cache.file}" />
+
+    <!-- expose this service through dubbo protocol, through port 20880 ProtocolConfig -->
+    <dubbo:protocol name="dubbo" port="20880" threads="200" register="${dubbo.provider.register}"/>
+
+    <dubbo:monitor protocol="registry"/>
+
+    <!-- 提供者默认配置 选用快速失败策略 -->
+    <dubbo:provider timeout="${dubbo.provider.timeout}" cluster="${dubbo.provider.cluster}" loadbalance="${dubbo.reference.loadbalance}"/>
+
+    <dubbo:consumer check="${dubbo.consumer.check}"/>
+
+
+</beans>
