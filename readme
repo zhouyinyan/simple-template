@@ -59,8 +59,9 @@ DB层: mysql
     3. 修改各个模块的名称
 
 
+9. durid servlet
 
-
+10. dubbo支持，dubbo demo（demoservice）和dubbo 消费端测试用例
 
 
 
