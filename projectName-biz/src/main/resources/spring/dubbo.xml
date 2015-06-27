@@ -24,7 +24,7 @@
     <dubbo:provider timeout="${dubbo.provider.timeout}" cluster="${dubbo.provider.cluster}"
                     loadbalance="${dubbo.reference.loadbalance}" />
 
-    <dubbo:consumer check="${dubbo.consumer.check}"/>
+    <dubbo:consumer check="${dubbo.consumer.check}" filter="performanceFilter"/>
 
 
 </beans>
