@@ -15,7 +15,7 @@ import static org.junit.Assert.assertTrue;
  * Created by zyinyan on 2015/6/23.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration({"classpath:spring/dubbo-consumer.xml"})
+@ContextConfiguration({"classpath:dubbo-consumer.xml"})
 public class BaseDubboConsumerTest {
 
     protected Logger logger = LoggerFactory.getLogger(getClass());
