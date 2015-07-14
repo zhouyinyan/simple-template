@@ -64,7 +64,7 @@
 		</then>
 	</if>
 	
-	<root level="info">
+	<root level="debug">
 		<appender-ref ref="projectName-log" />
 	</root>
 </configuration>
