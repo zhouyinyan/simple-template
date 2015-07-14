@@ -9,6 +9,12 @@
 	<artifactId>projectName-common</artifactId>
 
 	<dependencies>
+
+		<dependency>
+			<groupId>com.gzpay.common</groupId>
+			<artifactId>common-util</artifactId>
+		</dependency>
+
 		<!--公共基础依赖-->
 		<dependency>
 			<groupId>com.google.guava</groupId>

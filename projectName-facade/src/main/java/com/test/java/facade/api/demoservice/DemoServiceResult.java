@@ -1,11 +1,11 @@
 package com.test.java.facade.api.demoservice;
 
-import java.io.Serializable;
+import com.gzpay.common.rpc.result.ResultBase;
 
 /**
  * Created by zyinyan on 2015/6/26.
  */
-public class DemoServiceResult implements Serializable {
+public class DemoServiceResult extends ResultBase {
     private static final long serialVersionUID = -2328770994861507068L;
 
     private String orderNo;

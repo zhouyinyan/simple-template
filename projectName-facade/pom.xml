@@ -6,4 +6,11 @@
     <version>1.0</version>
   </parent>
   <artifactId>projectName-facade</artifactId>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.gzpay.common</groupId>
+      <artifactId>common-util</artifactId>
+    </dependency>
+  </dependencies>
 </project>
