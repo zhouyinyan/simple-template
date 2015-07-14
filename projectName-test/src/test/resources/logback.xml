@@ -4,9 +4,9 @@
 	<contextName>projectName</contextName>
 	
 	<appender name="projectName-log" class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>/var/log/webapps/projectName-dubbo-test.log</file>
+		<file>/var/log/webapps/projectName/dubboconsumer-test.log</file>
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-			<fileNamePattern>projectName-dubbo-test.log-%d{yyyy-MM-dd}</fileNamePattern>
+			<fileNamePattern>dubboconsumer-test.log-%d{yyyy-MM-dd}</fileNamePattern>
 		</rollingPolicy>
 		<encoder>
 			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36}---/%n-/%msg%n%n</pattern>
